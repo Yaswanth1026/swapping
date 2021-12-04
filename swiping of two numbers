@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main()
+{
+int a,b;
+printf("Enter the value of A = ");
+scanf("%d",&a);
+printf("Enter the value of B = ");
+scanf("%d",&b);
+printf("Before swapping A = %d and B = %d \n",a,b);
+// swapping logic
+a = a+b;  //let a=10,b=20 then a+b=30 which is assigned to 'a'(a=30)
+b = a-b;  //then a=30 and now a-b=30-20=10 which is assigned to 'b'(b=10)
+a = a-b;  //then b=10 now a-b=30-10=20 which is assigned to 'a'(a=20)
+printf("After swapping A = %d and b = %d \n",a,b);
+return 0;
+}
